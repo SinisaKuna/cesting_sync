@@ -1,4 +1,7 @@
 env
+dist
+build
+*.spec
 *.exe
 *.zip
 .vscode

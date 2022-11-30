@@ -1,0 +1,2 @@
+pyinstaller --onefile -w sync_cesting_data.py
+pyinstaller --onefile -w sync_cesting_data_server.py

@@ -79,21 +79,21 @@ for redak in result:
     myconn.cursor().execute(query)
 myconn.commit()
 
-# prosjek_place
-myconn = connect_mysql()
-mycursor = myconn.cursor()
-myquery = "delete from prosjek_place"
-mycursor.execute(myquery)
+# # prosjek_place
+# myconn = connect_mysql()
+# mycursor = myconn.cursor()
+# myquery = "delete from prosjek_place"
+# mycursor.execute(myquery)
 
-conn = connect_cesting('placa_0000')
-cursor = conn.cursor()
-query = "select prezime_ime, obj, radno_mjesto, netto, brutto, brutto_II from web_analiza_prosjeka_primanja order by prezime_ime"
-cursor.execute(query)
-result = cursor.fetchall()
+# conn = connect_cesting('placa_0000')
+# cursor = conn.cursor()
+# query = "select prezime_ime, obj, radno_mjesto, netto, brutto, brutto_II from web_analiza_prosjeka_primanja order by prezime_ime"
+# cursor.execute(query)
+# result = cursor.fetchall()
 
-polja = "prezime_ime, obj, radno_mjesto, netto, brutto, brutto_II"
-for redak in result:
-    query = "insert into prosjek_place (" + \
-        str(polja) + ") values " + str(redak)
-    myconn.cursor().execute(query)
-myconn.commit()
+# polja = "prezime_ime, obj, radno_mjesto, netto, brutto, brutto_II"
+# for redak in result:
+#     query = "insert into prosjek_place (" + \
+#         str(polja) + ") values " + str(redak)
+#     myconn.cursor().execute(query)
+# myconn.commit()
